@@ -1,0 +1,150 @@
+:root
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif
+	line-height: 1.5
+	font-weight: 400
+
+	color-scheme: light dark
+	color: rgba(255, 255, 255, 0.87)
+	background-color: #242424
+
+	font-synthesis: none
+	text-rendering: optimizeLegibility
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+a
+	font-weight: 500
+	color: #646cff
+	text-decoration: inherit
+	&:hover
+		color: #535bf2
+
+body
+	margin: 0
+	display: flex
+	place-items: center
+	min-width: 320px
+	min-height: 100vh
+	font-size: 20px
+
+h1
+	font-size: 3.2em
+	line-height: 1.1
+
+button
+	border-radius: 8px
+	border: 1px solid transparent
+	padding: 0.6em 1.2em
+	font-size: 1rem
+	font-weight: 500
+	font-family: inherit
+	background-color: #1a1a1a
+	cursor: pointer
+	transition: border-color 0.25s
+	&:hover
+		border-color: #646cff
+	&:focus,
+	&:focus-visible
+		outline: 4px auto -webkit-focus-ring-color
+
+@media (prefers-color-scheme: light)
+	:root
+		color: #213547
+		background-color: #ffffff
+	
+	a:hover
+		color: #747bff
+	
+	button
+		background-color: #f9f9f9
+
+*
+	margin: 0
+	padding: 0	
+
+body
+	margin: 0
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.App
+	margin: 0
+	padding: 20px
+	font-family: sans-serif
+	text-align: center
+	display: flex
+	align-content: center
+	justify-content: center
+	width: 100%
+
+.block
+	padding: 50px 80px
+	box-sizing: border-box
+	display: block
+	margin: 20px auto
+	border-radius: 10px
+	width: 100%
+	max-width: 600px
+
+button,
+select
+	padding: 3px 10px
+	min-width: 50px
+	margin: 5px
+
+.WeatherWidget
+	width: 200px
+	height: 200px
+	padding: 20px
+	margin: 10px
+	border: 2px solid grey
+	border-radius: 120px
+	background: lightgoldenrodyellow
+	color: black
+	display: inline-flex
+	flex-direction: column
+	justify-content: center
+	span
+		font-size: 36px
+	&.dark
+		background: #2a3c60
+		color: white
+
+#root
+	width: 100%
+
+input, select
+	&:focus
+		outline: none
+	padding: 10px 22px
+	border-radius: 10px
+	font-size: 1.3rem
+
+.theme
+	&-dark
+		background: #3d3d3e
+		color: lavender
+		.block
+			background: #202020
+			color: #c8c8c8
+		input, select
+			&:focus
+				outline: none
+				border: 1px solid #202020
+			border: 1px solid #49494a
+			color: #c8c8c8
+			background-color: #35353a
+	&-light
+		background: lavender
+		color: #3d3d3e
+		.block
+			background: #c6c6e4
+			color: #202020
+		input, select
+			&:focus
+				outline: none
+				border: 1px solid #202020
+			border: 1px solid #bab9c6
+			color: #202020
+			background-color: #e2e0f4
