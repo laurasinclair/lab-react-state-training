@@ -15,7 +15,7 @@ export default function ClickablePicture() {
 	const handleClick = () => {
 		setTimeout(() => {
 			shuffleDice(diceArr[Math.floor(Math.random() * diceArr.length)])
-		}, 3000)
+		}, 1000)
 
 		shuffleDice(DiceEmpty)
 	}
